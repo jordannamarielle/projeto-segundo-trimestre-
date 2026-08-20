@@ -1,6 +1,6 @@
 body{ /* selecionamos o corpo do site inteiro */
     background-color: Seashell; /* alterar a cor do fundo do site */
-    color: Maroon; /* alterar a cor da fonte */
+    color: rgb(194, 114, 114); /* alterar a cor da fonte */
     margin: 50px; /* alterar a margem em volta da página - semelhante à margem do word */
     font-family: "Poppins", sans-serif; /* alterar a fonte */
     font-weight: 400; /* alterar o peso da fonte - 400 = normal */
