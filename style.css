@@ -1,4 +1,5 @@
-/* Reset de margens e configuração base */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,68 +7,62 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.7;
+  font-family: 'Fredoka', 'Quicksand', cursive, sans-serif;
+  line-height: 1.6;
   max-width: 900px;
   margin: 0 auto;
   padding: 30px 20px;
-  color: #2d3748;
-  background-color: #f7fafc;
+  color: #5a4b51;
+  background-image: url('images.jpeg');
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-/* Animação suave na rolagem da página */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Cabeçalho Principal */
 header h1 {
-  color: #1a365d;
+  color: #ff6b8b;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   margin-bottom: 25px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #3182ce;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 3px solid #fca5a5;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
 }
 
-/* Estilização das Imagens */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-/* Seções de Conteúdo */
 section {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.82);
   padding: 25px;
   margin-bottom: 25px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  border: 2px solid #fca5a5;
+  box-shadow: 0 8px 16px rgba(255, 182, 193, 0.3);
+  backdrop-filter: blur(4px);
 }
 
-/* Títulos das Seções */
 h2 {
-  color: #2b6cb0;
+  color: #ff6b8b;
   font-size: 1.5rem;
-  border-bottom: 2px solid #e2e8f0;
+  border-bottom: 2px dashed #fca5a5;
   padding-bottom: 8px;
   margin-bottom: 15px;
 }
 
 h3 {
-  color: #2c5282;
+  color: #f472b6;
   font-size: 1.2rem;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-/* Parágrafos e Listas */
-p {
-  margin-bottom: 15px;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 2px solid #fca5a5;
 }
 
 ul {
@@ -79,72 +74,41 @@ li {
   margin-bottom: 8px;
 }
 
-li ul {
-  margin-top: 8px;
-  margin-bottom: 0;
-}
-
-/* Estilização da Tabela */
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin: 20px 0;
-  background-color: #ffffff;
+  border-radius: 15px;
   overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 2px solid #fca5a5;
 }
 
 th, td {
-  border: 1px solid #e2e8f0;
   padding: 12px 15px;
   text-align: left;
+  border-bottom: 1px solid #fce7f3;
 }
 
 th {
-  background-color: #ebf8ff;
-  color: #2c5282;
-  font-weight: bold;
+  background-color: rgba(254, 205, 211, 0.7);
+  color: #9d174d;
 }
 
 tr:nth-child(even) {
-  background-color: #f7fafc;
+  background-color: rgba(255, 241, 242, 0.5);
 }
 
-tr:hover {
-  background-color: #edf2f7;
-}
-
-/* Caixas de Destaque / Curiosidades */
 .curiosidade {
-  background-color: #ebf8ff;
-  border-left: 5px solid #3182ce;
+  background-color: rgba(255, 241, 242, 0.9);
+  border: 2px solid #fca5a5;
+  border-left: 6px solid #ff6b8b;
   padding: 18px;
   margin-top: 20px;
-  border-radius: 0 8px 8px 0;
+  border-radius: 15px;
 }
 
 .curiosidade p {
+  color: #9d174d;
   margin-bottom: 0;
-  color: #2c5282;
-}
-
-/* Layout Responsivo para telas menores */
-@media (max-width: 600px) {
-  body {
-    padding: 15px 10px;
-  }
-
-  header h1 {
-    font-size: 1.75rem;
-  }
-
-  section {
-    padding: 15px;
-  }
-
-  th, td {
-    padding: 8px 10px;
-    font-size: 0.9rem;
-  }
 }
