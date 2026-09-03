@@ -12,45 +12,49 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 30px 20px;
-  color: #5a4b51;
+  color: #4a3e43; /* Texto escuro para melhor legibilidade */
+  background-color: #fff5f7; /* Cor de fundo suave caso a imagem demore a carregar */
+  
+  /* Ajuste para a imagem cobrir toda a tela sem repetir */
   background-image: url('images.jpeg');
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 header h1 {
-  color: #ff6b8b;
+  color: #e11d48;
   text-align: center;
   font-size: 2.3rem;
   margin-bottom: 25px;
   padding: 15px;
-  background-color: rgba(255, 255, 255, 0.85);
-  border: 3px solid #fca5a5;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #fecdd3;
   border-radius: 20px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
 }
 
 section {
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(255, 255, 255, 0.88);
   padding: 25px;
   margin-bottom: 25px;
   border-radius: 20px;
-  border: 2px solid #fca5a5;
-  box-shadow: 0 8px 16px rgba(255, 182, 193, 0.3);
-  backdrop-filter: blur(4px);
+  border: 1px solid #fecdd3;
+  box-shadow: 0 10px 20px rgba(225, 29, 72, 0.08);
+  backdrop-filter: blur(8px);
 }
 
 h2 {
-  color: #ff6b8b;
+  color: #e11d48;
   font-size: 1.5rem;
-  border-bottom: 2px dashed #fca5a5;
+  border-bottom: 2px dashed #fecdd3;
   padding-bottom: 8px;
   margin-bottom: 15px;
 }
 
 h3 {
-  color: #f472b6;
+  color: #fb7185;
   font-size: 1.2rem;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -62,7 +66,8 @@ img {
   display: block;
   margin: 20px auto;
   border-radius: 15px;
-  border: 2px solid #fca5a5;
+  border: 2px solid #fecdd3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 ul {
@@ -81,34 +86,35 @@ table {
   margin: 20px 0;
   border-radius: 15px;
   overflow: hidden;
-  border: 2px solid #fca5a5;
+  border: 1px solid #fecdd3;
 }
 
 th, td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #fce7f3;
+  border-bottom: 1px solid #ffe4e6;
 }
 
 th {
-  background-color: rgba(254, 205, 211, 0.7);
-  color: #9d174d;
+  background-color: #ffe4e6;
+  color: #9f1239;
+  font-weight: 600;
 }
 
 tr:nth-child(even) {
-  background-color: rgba(255, 241, 242, 0.5);
+  background-color: rgba(255, 241, 242, 0.6);
 }
 
 .curiosidade {
-  background-color: rgba(255, 241, 242, 0.9);
-  border: 2px solid #fca5a5;
-  border-left: 6px solid #ff6b8b;
+  background-color: #fff1f2;
+  border: 1px solid #fecdd3;
+  border-left: 6px solid #e11d48;
   padding: 18px;
   margin-top: 20px;
   border-radius: 15px;
 }
 
 .curiosidade p {
-  color: #9d174d;
+  color: #881337;
   margin-bottom: 0;
 }
