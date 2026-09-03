@@ -1,13 +1,150 @@
-body{ /* selecionamos o corpo do site inteiro */
-    background-color: Seashell; /* alterar a cor do fundo do site */
-    color: rgb(194, 114, 114); /* alterar a cor da fonte */
-    margin: 50px; /* alterar a margem em volta da página - semelhante à margem do word */
-    font-family: "Poppins", sans-serif; /* alterar a fonte */
-    font-weight: 400; /* alterar o peso da fonte - 400 = normal */
-    display: flex; /* alterar a disposição dos elementos na tela - quero que eles sejam 'flexíveis', ou seja ocupem o espaço disponível de forma mais homogênea */
-    flex-direction: column; /* alterar a orientação dos elementos na tela - vão aparecer em coluna */
+/* Reset de margens e configuração base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2{ /* seleciona duas tags ao mesmo tempo */
-    text-align: center; /* alterar o alinhamento do texto - center= centralizado, end= lado direito, start= lado esquerdo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #2d3748;
+  background-color: #f7fafc;
+}
+
+/* Animação suave na rolagem da página */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cabeçalho Principal */
+header h1 {
+  color: #1a365d;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #3182ce;
+}
+
+/* Estilização das Imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Seções de Conteúdo */
+section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos das Seções */
+h2 {
+  color: #2b6cb0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #2c5282;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Parágrafos e Listas */
+p {
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li ul {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+/* Estilização da Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #e2e8f0;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #ebf8ff;
+  color: #2c5282;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+tr:hover {
+  background-color: #edf2f7;
+}
+
+/* Caixas de Destaque / Curiosidades */
+.curiosidade {
+  background-color: #ebf8ff;
+  border-left: 5px solid #3182ce;
+  padding: 18px;
+  margin-top: 20px;
+  border-radius: 0 8px 8px 0;
+}
+
+.curiosidade p {
+  margin-bottom: 0;
+  color: #2c5282;
+}
+
+/* Layout Responsivo para telas menores */
+@media (max-width: 600px) {
+  body {
+    padding: 15px 10px;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  th, td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
 }
