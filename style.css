@@ -16,7 +16,6 @@ body {
   background-color: #fff5f7; /* Cor de fundo suave caso a imagem demore a carregar */
   
   /* Ajuste para a imagem cobrir toda a tela sem repetir */
-  background-image: url('images.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
